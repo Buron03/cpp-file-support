@@ -9,6 +9,23 @@
 	"categories": [
 		"Other"
 	],
+	"publisher": "Buron03",
+	"author": {
+		"name": "David Alejandro Lopez Torres",
+		"email": "a17300155@ceti.mx"
+	},
+	"license": "GPLv3",
+	"homepage": "https://github.com/Buron03/cpp-file-support",
+	"repository": {
+		"type": "git", 
+		"url": "https://github.com/Buron03/cpp-file-support"
+	},
+	"keywords": [
+		"Cpp", 
+		"C++", 
+		"File Support"
+	],
+
 	"activationEvents": [
 		"*"
 	],
@@ -31,6 +48,7 @@
             }
         ]
 	},
+
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
