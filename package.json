@@ -1,0 +1,54 @@
+{
+	"name": "cpp-file-support",
+	"displayName": "Cpp File Support",
+	"description": "VSCode Cpp Run & Compile Tasks Builder",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "cpp-file-support.createCppProject",
+				"title": "Create C++ Project"
+			}
+		], 
+		"keybindings": [
+            {
+                "key": "alt+f9",
+                "command": "workbench.action.tasks.build"
+            }, 
+            {
+                "key": "ctrl+f9",
+                "command": "workbench.action.tasks.test"
+            }
+        ]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.52.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.15.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.1.3",
+		"typescript": "^4.1.2",
+		"vscode-test": "^1.4.1"
+	},
+	"dependencies": {
+		"mkdirp": "^1.0.4",
+		"vsce": "^1.83.0"
+	}
+}
