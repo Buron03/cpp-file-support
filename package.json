@@ -25,6 +25,7 @@
 		"C++", 
 		"File Support"
 	],
+	"icon": "img/cpp-128x128.png",
 
 	"activationEvents": [
 		"*"
